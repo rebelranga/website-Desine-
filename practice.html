@@ -1,0 +1,83 @@
+
+<html>
+    <head>
+        <title>website Desine using httml</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="main">
+          <nav>
+            <div class="Logo">
+             <img src="images.png">
+        </div> 
+        <div class="nav-links">
+            <ul>
+                <li><a href="#">home</a></li>
+                <li><a href="#">phone</a></li>
+                <li><a href="#">Accessories</a></li>
+                <li><a href="#">cart</a></li>
+            </ul>
+           </div>
+            </nav>
+            <div class="information">
+            <div class="overlay"></div>
+                <img src="https://cdn1.smartprix.com/rx-i4ntHbP1S-w1200-h1200/4ntHbP1S.jpg" class="mobile">
+                <div id="circle">
+                    <div class="feature one">
+                        <img src="https://t4.ftcdn.net/jpg/04/96/47/13/360_F_496471319_DbtjoUvKqyy2e9OfgBnK5mm2AXhKpa9m.jpg">
+                        <div>
+                            <h1>camera</h1>
+                            <p>12mp, wide angle lens</p>
+                        </div>
+                    </div>
+                    <div class="feature two">
+                        <img src="https://c8.alamy.com/comp/T566A0/cpu-processor-line-icon-computer-component-sign-colorful-outline-concept-logo-isolated-on-white-background-eps10-T566A0.jpg">
+                        <div>
+                            <h1>processor</h1>
+                            <p>sanpdragan 720</p>
+                        </div>
+                    </div>
+                    <div class="feature three">
+                        <img src="https://thumbs.dreamstime.com/b/computer-monitor-icon-logo-design-template-vector-178318835.jpg">
+                        <div>
+                            <h1>display</h1>
+                            <p>6.5 mini full screen</p>
+                        </div>
+                    </div>
+                    <div class="feature fourth">
+                        <img src="https://png.pngtree.com/png-vector/20190307/ourlarge/pngtree-vector-low-battery-icon-png-image_762949.jpg">
+                        <div>
+                            <h1>battrey</h1>
+                            <p>5000mah, 720hrs stands</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="controls">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0bcNc7aCoPMHELWYBzgSPWwGvSOXqyWNeVA&usqp=CAU" id="UPBtn">
+               <h3>features</h3>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0bcNc7aCoPMHELWYBzgSPWwGvSOXqyWNeVA&usqp=CAU" id="DOWNBtn">
+            </div>
+        </div>
+        <script>
+            var Circle = document.getElementById("Circle");
+            var UPBtn = document.getElementById("UPBtn");
+            var DOWNBtn = document.getElementById("DOWNBtn");
+
+            var rotatevalues = Circle.style.transform;
+            var rotateSum;
+
+
+            UPBtn.onClick = function()
+            {
+                rotateSum = rotateValues + "rotate(-90deg)";
+                Circle.style.transform = rotateSum;
+                rotateValues = rotateSum;
+        
+            }
+        </script>
+    
+</body>
+</html>
+
+    
